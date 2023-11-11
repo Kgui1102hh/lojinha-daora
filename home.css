@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Style Script', cursive;
+}
+.body{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Style Script', cursive;
+    box-sizing: border-box;
+    }
+.Nav-home{
+    font-family: 'Style Script', cursive;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(93.76deg, #90ab5a 68.63%, rgba(0, 370, 170, 0) 188.23%);
+
+}
+.Nav-home ul{
+margin-left: 12%;
+text-align: center;
+margin-top: -2px;
+}
+.Nav-home li{
+    list-style: none;
+    float: left;
+    color: #160d14;
+    margin-left: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 30px;
+
+}
+.Nav-home li:hover{
+    color: #d74aa9;
+    border-bottom:1px solid #d74aa9 ;
+}
+.icone-cart{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: 85%;
+    cursor: pointer;
+    margin-top: -18px;
+}
+.icone-perfil{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: 90%;
+    cursor: pointer;
+    margin-top: -50px;
+}
+.primary-animation{
+    background-color: aquamarine;
+    width: 100%;
+    height: 500px;
+}
+.primary-animation h1{
+    font-size: 50px;
+    margin-left: 50%;
+    margin-top: -350px;
+}
+.primary-animation button{
+    width: 100px;
+    height: 50px;
+    border: 2px solid #160d14;
+    background: transparent;
+    margin-left: 65%;
+}
+.primary-animation div{
+background-color: #d74aa9;
+width:550px;
+height: 500px;
+text-align: center;
+padding-top: 70px;
+animation: animite 20s infinite ease-out;
+border-top-right-radius: 100%;
+
+}
+@keyframes animite {
+    0%{
+       background-color: #d74aa9;
+    }
+    50%{
+        background-color: red;
+    }
+    
+}
+
+.primary-animation div:hover{
+    background-color: #b378a1;
+    
+}
+
+.primary-animation div p{
+    color: #160d14;
+    font-size: 50px;
+    
+
+}
+.primary-animation div #two{
+    opacity: 0;
+   
+    animation: item2 20s infinite ease-in-out;
+}
+@keyframes item2 {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+    
+}
+.primary-animation div #one{
+    opacity: 0;
+    animation: item1 20s infinite ease-in-out;
+}
+@keyframes item1 {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.conteiner{
+    margin-left: 7%;
+    margin-top: 20px;
+    display: flex;
+}
+.conteiner:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+    
+}
+.item{
+    transition: .35s;
+    cursor: pointer;
+    width: 300px;
+    background-color: black;
+    height: 400px;
+    float: left;
+    margin-left: 20px;
+}
+.open-carrosel{
+    margin-top: 200px;
+   width: 100%;
+   background-color: #160d14;
+  
+}
+
+.conteudo{
+    width: 100%;
+  
+}
+.open-carrosel h1{
+    font-size: 60px;
+    padding-left: 40px;
+    color: aqua;
+    font-weight: 800;
+}
+.carrosel{
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y:auto ;
+    overscroll-behavior-x:contain ;
+    scroll-snap-type: x mandatory;
+    scrollbar-width:none ;
+}
+.carrosel::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    
+    scroll-snap-align:start ;
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-left: 700px;
+    align-items: center;
+    justify-content: center;
+    background-color: #90ab5a;
+}
+#omega{
+    background: linear-gradient(-229deg, yellow, #d74aa9);
+   
+}
+#alfa{
+    background: linear-gradient(-229deg, lightgreen, lightblue);
+}
+.topico{
+    font-size: 60px;
+    padding-left: 120px;
+    color: aqua;
+    display: flex;
+    font-weight: 800;
+
+}
